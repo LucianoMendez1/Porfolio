@@ -1,0 +1,8 @@
+/* Para navegadores que admiten scrollbar-color */
+/* Puedes agregar el sufijo '-webkit-' para Safari */
+::-webkit-scrollbar {
+  scrollbar-color: #333 #f0f0f0; /* Thumb color #333, Background color #f0f0f0 */
+}
+
+/* Para navegadores que no admiten scrollbar-color */
+/* Esto afectará a los navegadores que no soporten la propiedad */
