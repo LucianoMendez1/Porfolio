@@ -1,11 +1,11 @@
 
 import './App.css';
-import Scene from './components/Scene'; // Importa el componente 'Home' desde 'Home.jsx'
 
+import Porfolio2d from './components/Portfolio2d';
 function App() {
   return (
     <div className="app">
-      <Scene /> {/* Renderiza el componente 'Home' aquí */}
+      <Porfolio2d /> {/* Renderiza el componente 'Home' aquí */}
     </div>
   );
 }
