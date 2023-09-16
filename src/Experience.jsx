@@ -1,12 +1,13 @@
 import { Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
 
+
 export default function Experience()
 {
     const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
     
     return <>
 
-        <color args={ [ '#f1f1f1f1' ] } attach="background" />
+        <color args={ [ '#ffc8a8' ] } attach="background" />
 
         <Environment preset="city" />
         
@@ -43,17 +44,26 @@ export default function Experience()
                         <iframe src="https://psychedelic2-0.vercel.app/" />
                     </Html>
                 </primitive>
-
                 <Text
-                    font="./bangers-v20-latin-regular.woff"
-                    fontSize={ 1 }
-                    position={ [ 2, 0.75, 0.75 ] }
-                    rotation-y={ - 1.25 }
-                    maxWidth={ 2 }
-                    color={ '#ff6900' }
-                >
-                  Luciano Mendez
-                </Text>
+  font="./bangers-v20-latin-regular.woff"
+  fontSize={1}
+  position={[2, 0.75, 0.75]}
+  rotation-y={-1.25}
+  maxWidth={2}
+  color={'#1171ff'}
+>
+  Luciano Mendez
+</Text>
+<Text
+  font="./bangers-v20-latin-regular.woff"
+  fontSize={0.3}
+  position={[2, -0.6, 2]}
+  rotation-y={-1.25}
+  maxWidth={2}
+  color={'#1171ff'}
+>
+  Porfolio 3D
+</Text>
             </Float>
         </PresentationControls>
 
