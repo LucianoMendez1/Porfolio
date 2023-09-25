@@ -41,7 +41,7 @@ export default function Experience()
                         position={ [ 0, 1.56, - 1.4 ] }
                         rotation-x={ - 0.256 }
                     >
-                        <iframe src="https://psychedelic2-0.vercel.app/" />
+                        <iframe src="https://windows-mugm.vercel.app/" />
                     </Html>
                 </primitive>
                 <Text
