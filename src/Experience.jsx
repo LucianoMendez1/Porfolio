@@ -7,13 +7,13 @@ export default function Experience()
     
     return <>
 
-        <color args={ [ '#ffc8a8' ] } attach="background" />
+        <color args={ [ '#000000' ] } attach="background" />
 
         <Environment preset="city" />
         
         <PresentationControls
             global
-            rotation={ [ 0.13, 0.1, 0 ] }
+            rotation={ [ 0, -0.6, 0 ] }
             polar={ [ - 0.4, 0.2 ] }
             azimuth={ [ - 1, 0.75 ] }
             config={ { mass: 2, tension: 400 } }
@@ -25,14 +25,16 @@ export default function Experience()
                     height={ 1.65 }
                     intensity={ 65 }
                     color={ '#ff6900' }
+                  
                     rotation={ [ - 0.1, Math.PI, 0 ] }
                     position={ [ 0, 0.55, - 1.15 ] }
                 />
 
                 <primitive
-                    object={ computer.scene }
-                    position-y={ - 1.2 }
-                    // rotation-x={ 0.13 }
+                     object={computer.scene}
+                     position-y={-1.8}
+                     rotation-x={0.0}
+                     scale={[1.5, 1.5, 1.5]}
                 >
                     <Html
                         transform
@@ -46,21 +48,21 @@ export default function Experience()
                 </primitive>
                 <Text
   font="./bangers-v20-latin-regular.woff"
-  fontSize={1}
-  position={[2, 0.75, 0.75]}
-  rotation-y={-1.25}
+  fontSize={0.5}
+  position={[-2.2, 0.75, 0.75]}
+  
   maxWidth={2}
-  color={'#1171ff'}
+  color={'#FFD700'}
 >
-  Luciano Mendez
+   Luciano Mendez
 </Text>
 <Text
   font="./bangers-v20-latin-regular.woff"
-  fontSize={0.3}
-  position={[2, -0.6, 2]}
-  rotation-y={-1.25}
+  fontSize={0.2}
+  position={[-2.1, -0., 1]}
+
   maxWidth={2}
-  color={'#1171ff'}
+  color={'#FFD700'}
 >
   Porfolio 3D
 </Text>
@@ -68,7 +70,7 @@ export default function Experience()
         </PresentationControls>
 
         <ContactShadows
-            position-y={ - 1.4 }
+            position-y={ - 1.6 }
             opacity={ 0.4 }
             scale={ 5 }
             blur={ 2.4 }
